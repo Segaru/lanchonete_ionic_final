@@ -1,0 +1,35 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>LanchesEdit</ion-title>
+    </ion-navbar>
+
+  </ion-header>
+
+
+  <ion-content padding>
+
+    <ion-list>
+
+      <ion-item>
+        <ion-label stacked>Nome</ion-label>
+        <ion-input type="text" name="nome" [(ngModel)]="lanche.nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Descricao</ion-label>
+        <ion-input type="text" name="descricao" [(ngModel)]="lanche.descricao"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Valor</ion-label>
+        <ion-input type="text" name="valor" [(ngModel)]="lanche.valor"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+
+
+    <button ion-button block (click)="save()">Salvar</button>
+
+  </ion-content> 
